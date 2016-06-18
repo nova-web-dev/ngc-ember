@@ -1,7 +1,6 @@
-# Nova-gaming
+# Nova-Gaming
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Nova Gaming is a single page static website, built in ember and using firebase for news and content.
 
 ## Prerequisites
 
