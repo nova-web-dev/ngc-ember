@@ -1,0 +1,104 @@
+.about-page{
+
+}
+.about-slider-container{
+
+}
+.about-slider{
+	// min-height: 33vh;
+}
+.pear-slide-1{
+
+}
+.about-intro{
+	font-family: 'Lora', serif;
+	font-size: 2em;
+}
+.about-intro-header{
+	font-size: 4em;
+}
+.pear-slide-2, .pear-slide-3{
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	h1{
+		color: white;
+		font-size: 13em;
+		// font-family: 'Abel', sans-serif;
+		font-weight: 300;
+		// font-style: italic;
+		margin: 0px;
+	}
+	h4{
+		color: white;
+		font-size: 3em;
+		// font-family: 'Open Sans', sans-serif;
+		font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+		font-style: italic;
+		font-weight: 300;
+	}
+}
+.about-center-me{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.about-font-stretch{
+    display:inline-block;
+}
+.slick-content{
+	height: 60vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.slick-prev {
+	left: 40px;
+	z-index: 4;
+	&:before {
+		// color: red !important;
+	}
+}
+.slick-next {
+	right: 40px;
+	z-index: 4;
+	&:before {
+		// color: red !important;
+	}
+}
+/*==============================================================================*\
+	Leave these
+\*==============================================================================*/
+//fonts
+$font_0: FontAwesome;
+
+//@extend-elements
+//original selectors
+//.slick-prev:before, .slick-next:before
+%extend_1 {
+   font-family: $font_0;
+   font-size: 40px;
+   line-height: 1;
+   color: white;
+   opacity: 0.75;
+}
+
+
+[dir="rtl"] {
+   .slick-next {
+      &:before {
+         content: "\f053";
+      }
+   }
+   .slick-prev:before {
+      content: "\f054";
+   }
+}
+.slick-prev:before {
+   @extend %extend_1;
+   content: "\f053";
+}
+.slick-next:before {
+   @extend %extend_1;
+   content: "\f054";
+}
